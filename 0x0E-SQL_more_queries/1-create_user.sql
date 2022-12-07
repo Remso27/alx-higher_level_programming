@@ -1,8 +1,8 @@
 -- Write a script that creates the MySQL server user user_0d_1
 -- The user_0d_1 password should be set to user_0d_1_pwd
 -- If the user user_0d_1 already exists, your script should not fail
-CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' DENTIFIED WITH authentication_plugin BY 'user_0d_1_pwd';
-FLUSH PRIVILEGES
+CREATE USER IF NOT EXISTS 'user_0d_1'@'localhost' IDENTIFIED BY 'user_0d_1_pwd';
+FLUSH PRIVILEGES;
 -- - user_0d_1 should have all privileges on your MySQL server
 GRANT ALL PRIVILEGES ON *.* TO 'user_0d_1'@'localhost';
-FLUSH PRIVILEGES
+FLUSH PRIVILEGES;
